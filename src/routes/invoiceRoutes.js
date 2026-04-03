@@ -470,7 +470,7 @@ router.post('/generate-summary', async (req, res) => {
                 acc[client] = {
                     colored: { qty: 0, bags: 0 },
                     black: { qty: 0, bags: 0 },
-                    tpe: { qty: 0, bags: 0 }
+                    antiskid: { qty: 0, bags: 0 }
                 };
             }
             inv.items.forEach(item => {
@@ -478,12 +478,12 @@ router.post('/generate-summary', async (req, res) => {
                 const qty = parseFloat(item.qty) || 0;
                 if (cat.includes('colored')) acc[client].colored.qty += qty;
                 else if (cat.includes('black')) acc[client].black.qty += qty;
-                else if (cat.includes('tpe')) acc[client].tpe.qty += qty;
+                else if (cat.includes('antiskid')) acc[client].antiskid.qty += qty;
             });
 
             acc[client].colored.bags = Math.ceil(acc[client].colored.qty / 25);
             acc[client].black.bags = Math.ceil(acc[client].black.qty / 50);
-            acc[client].tpe.bags = Math.ceil(acc[client].tpe.qty / 25);
+            acc[client].antiskid.bags = Math.ceil(acc[client].antiskid.qty / 25);
             
             return acc;
         }, {});
