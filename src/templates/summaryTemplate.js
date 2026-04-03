@@ -6,7 +6,7 @@ module.exports = (summaryData) => {
       <td class="num">${totals.colored}</td>
       <td class="num">${totals.black}</td>
       <td class="num">${totals.antiskid}</td>
-      <td class="num" style="font-weight: bold;">${totals.colored + totals.black + totals.tpe}</td>
+      <td class="num" style="font-weight: bold;">${totals.colored + totals.black + totals.antiskid}</td>
     </tr>
   `).join('');
 
