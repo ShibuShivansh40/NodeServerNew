@@ -5,7 +5,7 @@ module.exports = (summaryData) => {
       <td style="text-align: left; padding-left: 5mm;">${client}</td>
       <td class="num">${totals.colored}</td>
       <td class="num">${totals.black}</td>
-      <td class="num">${totals.tpe}</td>
+      <td class="num">${totals.antiskid}</td>
       <td class="num" style="font-weight: bold;">${totals.colored + totals.black + totals.tpe}</td>
     </tr>
   `).join('');
@@ -15,8 +15,8 @@ module.exports = (summaryData) => {
         <td style="text-align: left; padding-left: 5mm;">${client}</td>
         <td class="num">${totals.colored.qty} pcs <br><small>(${totals.colored.bags} Bags)</small></td>
         <td class="num">${totals.black.qty} pcs <br><small>(${totals.black.bags} Bags)</small></td>
-        <td class="num">${totals.tpe.qty} pcs <br><small>(${totals.tpe.bags} Bags)</small></td>
-        <td class="num" style="font-weight: medium;"> ${totals.colored.bags + totals.black.bags + totals.tpe.bags} Bags</td>
+        <td class="num">${totals.antiskid.qty} pcs <br><small>(${totals.antiskid.bags} Bags)</small></td>
+        <td class="num" style="font-weight: medium;"> ${totals.colored.bags + totals.black.bags + totals.antiskid.bags} Bags</td>
       </tr>
     `).join('');
 
