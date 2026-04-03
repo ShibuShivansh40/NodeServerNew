@@ -47,7 +47,7 @@ module.exports = (summaryData) => {
                 <th style="text-align: left; padding-left: 5mm;">Client Name</th>
                 <th>Colored</th>
                 <th>Black</th>
-                <th>TPE</th>
+                <th>Antiskid</th>
                 <th>Total Bags</th>
             </tr>
         </thead>

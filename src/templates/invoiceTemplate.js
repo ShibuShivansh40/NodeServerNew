@@ -117,7 +117,7 @@ module.exports = (data) => {
             <p class="summary-title">Quantity Summary (By Category):</p>
                 <span><strong>Colored:</strong> ${totalsByCategory.colored}</span>
                 <span><strong>Black:</strong> ${totalsByCategory.black}</span>
-                <span><strong>7D:</strong> ${totalsByCategory.tpe}</span>
+                <span><strong>Antiskid:</strong> ${totalsByCategory.tpe}</span>
             </div>
         </div>
 
